@@ -1,0 +1,373 @@
+*{
+    margin: 0; /* Elimina márgenes por defecto de todos los elementos */
+    padding: 0; /* Elimina rellenos por defecto */
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;500&display=swap');
+body{
+    background-color: #000000;
+    color: #e6e6e6; /* Color del texto */
+    font-family: 'poppins', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #4CC2FF;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-shadow:
+        0 0 8px #4CC2FF,
+        0 0 16px #4CC2FF,
+        0 0 32px #008CFF,
+        0 0 48px #008CFF;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow:
+            0 0 6px #4CC2FF,
+            0 0 12px #4CC2FF,
+            0 0 24px #008CFF,
+            0 0 36px #008CFF;
+    }
+    to {
+        text-shadow:
+            0 0 8px #4CC2FF,
+            0 0 18px #4CC2FF,
+            0 0 38px #008CFF,
+            0 0 60px #008CFF;
+    }
+}
+h2,h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #4cc2ff;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 26px;
+    margin-bottom: 18px;
+
+}
+header {
+  background-color: #307a9a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa logo y menú */
+  padding: 10px 50px;
+}
+
+.brand img {
+  height: 70px; /* ajustá según el tamaño que quieras */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Menú centrado */
+.menu-navegacion {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* centra el contenido del menú */
+  align-items: center;
+  flex: 1; /* ocupa el espacio restante */
+  margin: 0;
+  padding: 0;
+}
+
+/* Espaciado entre los enlaces */
+.menu-navegacion li {
+  margin: 0 20px;
+}
+
+/* Estilo de los enlaces */
+.menu-navegacion a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-navegacion a:hover {
+  color: #00bcd4; /* color al pasar el cursor */
+}
+
+
+table{
+    color: white; /* Color del texto dentro de la tabla */
+    font-size: 20px; /* Tamaño de letra */
+    display: flex; /* Usamos flexbox para organizar las celdas */
+    flex-flow: row wrap; /* Organiza en filas y permite que pasen a otra línea */
+    table-layout: fixed; /* Tamaño fijo para columnas */
+    border-collapse: collapse; /* Quita espacio entre bordes de celdas */
+}
+
+.titulo_componentes{
+    text-align: center;
+}
+.cuadro {
+    display: flex; /* Contenedor flexible, organiza en columnas */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 20px; /* Espaciado interno */
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centrado horizontal con margen arriba y abajo */
+}
+
+.columna-imagen {
+    flex: 1; /* Ocupa una parte del espacio total */
+    padding-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.columna-imagen img {
+    max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+p {
+    color:aliceblue;
+    margin-bottom: 30px;
+}
+.columna-info {
+    flex: 2; /* Ocupa más espacio que la columna de imagen */
+    color: black;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.columna-info h2 {
+    margin-top: 0; /* Elimina margen superior del título */
+}
+
+.video {
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centra el video horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    top: 50%; /* No tiene efecto sin posicionamiento absoluto */
+    right: 50%; /* Lo mismo, requiere posición absoluta */
+    margin-bottom: 40px; /* Espacio debajo del video */
+}
+/*
+footer{
+    background-color: #307a9a; /* Fondo oscuro del pie de página */
+   /* display: flex; /* Flexbox para alinear contenido */
+    /*justify-content: space-around; / Distribuye espacio uniformemente */
+    /*flex-wrap: 1; / (Incorrecto, debería ser wrap o nowrap) */
+    /*padding: 0px 20px 5px 20px; / Espaciado interno: arriba 0, derecha 40, abajo 40, izquierda 0 */
+    /*text-align: center; / Centra el texto */
+    /*flex: row;*/
+
+
+.subtitulo{
+    margin-top: 50px; /* Separación desde arriba */
+    color: azure; /* Color del texto */
+    text-align: left; /* Centrado horizontal */
+    text-decoration: underline; /* Línea debajo del texto (comentado)*/  
+}
+
+/*.escuela{
+    margin-top: 10px; /* Separación desde arriba */
+    /*color: azure; / Color del texto */
+    /*text-align: center;
+}*/
+.parrafo{
+    text-align: center; /* Centra el párrafo */
+    text-decoration: none; /* Sin subrayado */
+    color: aqua; /* Color del texto */
+}
+
+.seccion1{
+    font-size: 20px; /* Tamaño del texto */
+}
+
+.PUBLICIDAD{
+    width: 220px; /* Ancho del cuadro de publicidad */
+    height: 220px; /* Alto del cuadro */
+    padding: 10px 10px; /* Espaciado interno: arriba/abajo 10px, derecha/izquierda 20px */
+}
+
+aside{
+    width: 20%; /* Ocupa el 20% del ancho de la pantalla */
+    float: right; /* Se posiciona a la derecha */
+    background-color: rgb(4, 0, 44); /* Fondo oscuro */
+    height: 725px; /* Altura fija */
+}
+
+.no-gif, .efecto:hover .gif{
+    display: flex;
+}
+.gif, .efecto:hover .no-gif{
+    display: none;
+}
+
+/**.brand img {
+    width:90px;
+    height: 70;
+}*
+
+/*nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0px 100px;
+}*/
+
+/* --- CONTENEDOR DEL MENÚ --- */
+nav {
+  display: flex;
+  justify-content: space-between; /* logo a un lado, links al otro */
+  align-items: center;
+  background-color: #333;
+  padding: 10px 40px;
+}
+
+/* --- LOGO --- */
+/*.brand img {
+  height: 70px; /* ajustá el tamaño según tu gusto */
+  /*width: auto;
+  display: block;
+}
+
+/* --- LISTA DEL MENÚ --- */
+.menu-navegacion {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap; /* evita que los enlaces bajen */
+  gap: 25px; /* espacio entre los botones */
+  padding: 0;
+  margin: 0;
+  align-items: left ;
+}
+
+/* --- ENLACES DEL MENÚ --- */
+.menu-navegacion a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-navegacion a:hover {
+  color: #00bcd4; /* cambia el color al pasar el mouse */
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid #000000;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.menu-navegacion li:hover .menu-vertical{
+  display: block;
+  
+}
+/* Contenedor de redes sociales en el footer */
+/*.redes-sociales {
+  display: flex;
+  justify-content: center;  /* Centra los íconos horizontalmente */
+ /* gap: 20px;                /* Espacio entre íconos */
+  /*padding: 20px 0;
+}
+
+/* Estilo para los enlaces */
+/*.redes-sociales a {
+  color: white;             /* Color blanco para los íconos */
+  /*font-size: 24px;          / Tamaño de los íconos */
+  /*transition: color 0.3s;
+  text-decoration: none;
+}
+
+/* Cambiar color al pasar el mouse */
+/*.redes-sociales a:hover {
+  color: #1da1f2;           /* Ejemplo: color celeste al pasar el mouse */
+/*}
+
+/* Redefinimos solo la parte de redes sociales */
+/*.footer-derecha {
+  display: flex;
+  justify-content: flex-end;  /* A la derecha */
+  /*align-items: flex-end;      / Abajo dentro de su bloque */
+ /* flex-direction: column;     /* Por si querés más cosas arriba */
+  /*margin-left:0%;        / Empuja el bloque completamente hacia la derecha dentro de su contenedor */
+
+
+footer {
+  background-color: #357793;  /* azul */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px; /* distancia arriba y abajo */
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* PARTICIPANTES */
+.papita1 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* en lugar de center */
+  align-items: center;
+  margin-left: 2px; /* ajustá este valor según quieras */
+}
+
+
+.participantes {
+  list-style: disc;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.participantes h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* TEXTO DEL COLEGIO */
+.escuela {
+  flex: 2;
+  text-align: center;
+}
+
+.escuela h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.escuela h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
+
+/* REDES SOCIALES */
+.footer-derecha {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+.redes-sociales a {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: #00bcd4;
+}
